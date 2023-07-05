@@ -1,0 +1,145 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.problem-listing-container {
+  padding: 2rem;
+}
+
+.explore-content-h1{
+    text-align: center;
+    margin-left: -20px;
+    font-weight: 500;
+    color: black;
+    font-size: 33px;
+    line-height: 1.6em;
+    opacity: 0.8;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+}
+
+.featured-main-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+  
+
+}
+
+.featured-img-description{
+    font-size: 14px;
+    line-height: 1.6em;
+    opacity: 0.6;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 20px;
+
+
+}
+
+.featured-img-size{
+  height: 152px;
+  width: 152px;
+  border-radius: 30px;
+  
+}
+.problem-cat-container {
+  display: flex;
+  margin-top: 1rem;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 125px;
+}
+
+.problem-cat {
+  height: 25px;
+  width: 15rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.6s;
+  overflow: hidden;
+  position: relative;
+}
+
+.explore-content {
+  text-align: center;
+  font-weight: 500;
+  color: black;
+  line-height: 1.6em;
+  opacity: 0.6;
+  padding-bottom: 30px;
+}
+
+.problem-cat:hover {
+  transform: scale(1.06);
+}
+
+.easy {
+  background: #11998e; /* fallback for old browsers */
+  background: linear-gradient(
+    45deg,
+    #38ef7d,
+    #11998e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.medium {
+  background: #ff512f; /* fallback for old browsers */
+  background: linear-gradient(45deg, #f09819, #ff512f);
+}
+
+.hard {
+  background: #aa076b; /* fallback for old browsers */
+  background: linear-gradient(45deg, #61045f, #aa076b);
+}
+
+.problem-cat > h3 {
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+.sheen:after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: linear-gradient(
+    to bottom,
+    rgba(171, 227, 164, 0),
+    rgba(230, 238, 232, 0.5) 50%,
+    rgba(118, 167, 196, 0)
+  );
+  transform: rotateZ(60deg) translate(-25em, 15em);
+}
+
+.sheen:hover::after {
+  animation: sheen 1.5s forwards;
+}
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(10em, -15em);
+  }
+}
+
+.problem-listing-space {
+  width: 80%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  height: 18rem;
+  margin-left: 170px;
+}
+
+.problem-listing-page-bar {
+  width: 80%;
+  margin-left: 130px;
+}

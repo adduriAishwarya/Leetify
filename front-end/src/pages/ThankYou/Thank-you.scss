@@ -1,0 +1,61 @@
+.thank-you-container {
+  padding-top: 80px;
+  height: 650px;
+}
+
+.thank-you-main {
+  height: 80vh;
+  width: 100%;
+  flex-direction: row;
+  position: relative;
+}
+
+.thank-you-content {
+  flex-direction: column;
+  margin-top: 200px;
+  margin-left: 160px;
+}
+
+.thank-you-content > h1 {
+    color: #42bd9f;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.6em;
+  letter-spacing: 0.04em;
+  padding-bottom: 5px;
+}
+.thank-you-content > p {
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 30px px;
+  line-height: 1.8em;
+  letter-spacing: 0.04em;
+  padding-bottom: 30px;
+  opacity: 0.5;
+}
+
+.thank-you-content-button {
+    
+    color: white;
+    border: none;
+    border-radius: 1020px;
+    margin-top: 30px;
+    background: #42bd9f;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    font-size: 15px;
+    height: 50px;
+    width: 180px;
+    border: 1px solid transparent;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+.thank-you-content-button:hover{
+background: #2d9d81;
+}
+
+.thank-you-image {
+  margin-left: 60px;
+  margin-top: 120px;
+}

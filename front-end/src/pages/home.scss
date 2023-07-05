@@ -1,0 +1,263 @@
+.gradient {
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+  width: 100%;
+}
+
+.rest {
+  position: relative;
+  padding-top: 50px;
+  width: 100%;
+}
+
+.first-fold {
+  
+  display: flex;
+  padding-top: 50px;
+ 
+}
+
+.first-fold-img {
+  display: flex;
+  position: relative;
+  margin-left: 135px;
+  z-index: 1;
+}
+
+.first-fold-img2 {
+  display: flex;
+  position: absolute;
+  top: 70px;
+  margin-left: 220px;
+  z-index: 2;
+}
+
+.first-fold-content {
+  display: flex;
+  position: absolute;
+  top: 230px;
+  margin-left: 800px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.first-fold-content > h1 {
+  font-weight: 500;
+  font-size: 50px;
+  color: white;
+}
+
+.first-fold-content > p {
+  margin-top: 35px;
+  margin-bottom: 30px;
+  opacity: 0.5;
+  font-weight: 400;
+  color: white;
+  max-width: 600px;
+  font-size: 15px;
+  line-height: 1.9em;
+  letter-spacing: 0.03em;
+}
+
+.first-fold-content-button {
+  border-radius: 1020px;
+  margin-top: 30px;
+  background: #42bd9f;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  font-size: 15px;
+  height: 50px;
+  width: 180px;
+  border: 1px solid transparent;
+  position: relative;
+  left: 25px;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+.first-fold-content-button:hover {
+  background: #2d9d81;
+}
+
+.dev {
+  background-color: #f7f9fc;
+}
+
+.dev-content-img1 {
+  display: flex;
+  position: relative;
+  top: -30px;
+  margin-left: 700px;
+}
+
+.dev-content-img2 {
+  display: flex;
+  position: relative;
+  top: -80px;
+  margin-left: 250px;
+  box-shadow: 5.5px 11px 11px hsl(0deg 0% 0% / 0.33);
+}
+.dev-content > h2 {
+  position: relative;
+  top: -93px;
+  padding-top: 90px;
+  padding-bottom: 18px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+  color: #1da09c;
+}
+.dev-content > p {
+  position: relative;
+  top: -85px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 15px;
+  color: #000000a6;
+  opacity: 0.6;
+  font-weight: 400;
+  line-height: 1.9em;
+  letter-spacing: 0.03em;
+  margin: auto;
+  max-width: 600px;
+}
+
+.rest-color {
+  color: #fefefe;
+}
+
+.usp {
+  padding-top: 30px;
+}
+
+.usp-content-img1 {
+  display: flex;
+  position: absolute;
+  left: 700px;
+}
+
+.usp-content-img2 {
+  display: flex;
+  position: absolute;
+  margin-left: 250px;
+  box-shadow: 5.5px 11px 11px hsl(0deg 0% 0% / 0.33);
+}
+.usp-content > h2 {
+  padding-top: 90px;
+  padding-bottom: 18px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+  color: #f3c751;
+}
+.usp-content > p {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 15px;
+  color: #000000a6;
+  opacity: 0.6;
+  font-weight: 400;
+  line-height: 1.9em;
+  letter-spacing: 0.03em;
+  margin: auto;
+  max-width: 600px;
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.floating-1 {
+  animation-name: floating;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.floating-2 {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.usp-flex {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 205px;
+  top: 20px;
+  margin-bottom: 115px;
+}
+
+.usp-box {
+  box-sizing: content-box;
+  background: #22c1c3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fdbb2d,
+    #22c1c3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fdbb2d,
+    #22c1c3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 330.94px;
+  width: 300.94px;
+  border-radius: 15px;
+  margin-left: 40px;
+  box-shadow: 5.5px 11px 11px hsl(0deg 0% 0% / 0.33);
+}
+
+.usp-box > h1 {
+  color: black;
+  font-size: 40px;
+  font-weight: 430;
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-bottom: 40px;
+}
+
+.usp-box > p {
+  color: black;
+  font-size: 20px;
+  font-weight: 430;
+  padding-left: 30px;
+}
+
+.box-p-2 {
+  padding-top: 45px;
+}
+.box-p-3 {
+  padding-top: 92px;
+}

@@ -1,0 +1,548 @@
+openapi: 3.0.3
+info:
+  title: INFO6150 - Web Design and User Experience Engineering Final Project || LEETIFY
+  description: 
+    Leetify is an online platform that provides a collection of coding challenges to help developers prepare for technical interviews.
+  version: "1.0.0"
+externalDocs:
+  description: Github Source
+  url: https://github.com/neu-mis-info-6150-spring-2023/final-project-group-codelite_lsar
+servers:
+  - url: http://localhost:8000/
+tags:
+  - name: users
+    description: User endpoints
+  - name: problems
+    description: Problem endpoints
+  - name: tests
+    description: Test endpoints
+paths:
+  /users:
+    get:
+      tags:
+        - users
+      summary: Get all users
+      description: Get all users
+      operationId: getallusers
+      responses:
+        '200':
+          description: List of users
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+        '500':
+          description: Internal server error
+  /users/{id}:
+    get:
+      tags:
+        - users
+      summary: Get a user
+      description: Get a user
+      operationId: getauser
+      parameters:
+        - name: id
+          in: path
+          description: 'Fetch user by ID'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Get a user
+          content:
+            application/json:
+              schema:
+                  $ref: '#/components/schemas/User'
+        '500':
+          description: Internal server error
+    put:
+      tags:
+        - users
+      summary: Update user details
+      description: Update user details
+      operationId: updateuser
+      parameters:
+        - name: id
+          in: path
+          description: 'Update user'
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        description: Register user
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+        required: true
+      responses:
+        '200':
+          description: Update user
+          content:
+            application/json:
+              schema:
+                  $ref: '#/components/schemas/User'
+        '404':
+          description: User not found!
+        '500':
+          description: Internal server error
+    delete:
+      tags:
+        - users
+      summary: Delete user details
+      description: Delete user details
+      operationId: deleteuser
+      parameters:
+        - name: id
+          in: path
+          description: 'Delete user'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: User details deleted!
+        '404':
+          description: User not found!
+        '500':
+          description: Internal server error
+  /users/register:
+    post:
+      tags:
+        - users
+      summary: Register a user
+      description: Register a user
+      operationId: registeruser
+      requestBody:
+        description: Register user
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegisterUser'
+        required: true
+      responses:
+        '201':
+          description: User created and registered
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'          
+        '400':
+          description: Required data not provided
+  /users/login:
+    post:
+      tags:
+        - users
+      summary: User Login
+      description: User login
+      operationId: userlogin
+      requestBody:
+        description: User Login
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginUser'
+        required: true
+      responses:
+        '201':
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'          
+        '400':
+          description: Required data not provided
+  /problems:
+    get:
+      tags:
+        - problems
+      summary: Get all problems
+      description: Get all problems
+      operationId: getallproblems
+      responses:
+        '200':
+          description: Retrieved all problems
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Problem'
+        '500':
+          description: Internal server error
+    post:
+      tags:
+        - problems
+      summary: Create a problem
+      description: Create a problem
+      operationId: createaproblem
+      requestBody:
+        description: Create a problem
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Problem'
+        required: true
+      responses:
+        '201':
+          description: Problem created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Problem'          
+        '400':
+          description: Required data not provide
+  /problems/{difficulty}:
+    get:
+      tags:
+        - problems
+      summary: Fetch problems by difficulty
+      description: Fetch problems by difficulty
+      operationId: fetchproblemsbydifficulty
+      parameters:
+        - name: difficulty
+          in: path
+          description: 'Fetch problems by difficulty'
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Retrieved all problems by difficulty
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Problem'
+        '500':
+          description: Internal server error
+  /problems/{id}:
+    get:
+      tags:
+        - problems
+      summary: Fetch problems by id
+      description: Fetch problems by id
+      operationId: fetchproblemsbyid
+      parameters:
+        - name: id
+          in: path
+          description: 'Fetch problems by id'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Retrieved all problems by id
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+        '500':
+          description: Internal server error
+    put:
+      tags:
+        - problems
+      summary: Update a problem
+      description: Update a problem
+      operationId: updateaproblem
+      parameters:
+        - name: id
+          in: path
+          description: 'Update a problem'
+          required: true
+          schema:
+            type: integer
+            example: 19
+      requestBody:
+        description: Update a problem
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: "Two Sum Problem"
+        required: true
+      responses:
+        '200':
+          description: Problem updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Problem'          
+        '400':
+          description: Required data not provided
+        '404':
+          description: Problem not found
+    delete:
+      tags:
+        - problems
+      summary: Delete a problem
+      description: Delete a problem
+      operationId: deleteaproblem
+      parameters:
+        - name: id
+          in: path
+          description: 'Delete a problem'
+          required: true
+          schema:
+            type: integer
+            example: 19
+      responses:
+        '200':
+          description: Problem deleted!
+        '404':
+          description: Problem not found!
+  /tests:
+    get:
+      tags:
+        - tests
+      summary: Get all tests
+      description: Get all tests
+      responses:
+        '200':
+          description: Get all tests
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Test'
+        '500':
+          description: Internal server error
+    post:
+      tags:
+        - tests
+      summary: Create a test
+      description: create a test
+      operationId: createatest
+      requestBody:
+        description: Create a test
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Test'
+        required: true
+      responses:
+        '201':
+          description: Test created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Test'
+        '400':
+          description: Bad request
+  /tests/{id}:
+    get:
+      tags:
+        - tests
+      summary: Fetch test by id
+      description: Fetch test by id
+      parameters:
+        - name: id
+          in: path
+          description: 'Fetch a test by id'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Fetch test by id
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Test'
+        '404':
+          description: Test not found!
+        '500':
+          description: Internal server error
+    put:
+      tags:
+        - tests
+      summary: Update a test
+      description: Update test by id
+      parameters:
+        - name: id
+          in: path
+          description: 'Update a test by id'
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        description: update a test
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Test'
+        required: true
+      responses:
+        '200':
+          description: Update test by id
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Test'
+        '404':
+          description: Test not found!
+        '500':
+          description: Internal server error
+    delete:
+      tags:
+        - tests
+      summary: Delete a test
+      description: Delete test 
+      parameters:
+        - name: id
+          in: path
+          description: 'Delete a test by id'
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Test deleted!
+        '404':
+          description: Test not found!
+        '500':
+          description: Internal server error
+components:
+  schemas:
+    RegisterUser:
+      type: object
+      properties:
+        name:
+          type: string
+          example: username
+        email:
+          type: string
+          example: example@gmail.com
+        password:
+          type: string
+          example: password
+        phone:
+          type: string
+          example: 8775429987
+    LoginUser:
+      type: object
+      properties:
+        email:
+          type: string
+          example: example@gmail.com
+        password:
+          type: string
+          example: password
+    Submission:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 11
+        problem_id:
+          type: integer
+          format: int64
+          example: 7
+        user_id:
+          type: integer
+          format: int64
+          example: 10
+        submitted_time:
+          type: string
+        language:
+          type: string
+          example: Java
+        submission:
+          type: object
+        status:
+          type: string
+          example: pending
+          enum:
+            - pending
+            - accepted
+            - rejected
+    Problem:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 19
+        name:
+          type: string
+          example: Two Sum
+        description:
+          type: string
+        difficulty:
+          type: string
+          enum:
+           - easy
+           - medium
+           - hard
+        solution:
+          type: object
+        tests:
+          type: object
+        tag:
+          type: object
+    Test:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 55
+        problem_id:
+          type: integer
+          format: int64
+          example: 45
+        name:
+          type: string
+          example: 'Two Sum Test 1'
+        description:
+          type: string
+        test:
+          type: object
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 10
+        name:
+          type: string
+          example: username
+        email:
+          type: string
+          example: example@gmail.com
+        password:
+          type: string
+          example: password
+        phone:
+          type: string
+          example: 8775429987
+        role:
+          type: string
+          example: user
+          enum:
+            - user
+            - premium_user
+            - admin
+        score:
+          type: integer
+          example: 89
+        problemsSolved:
+          type: integer
+          example: 65
+        submissions:
+          type: array
+          items:
+            $ref: '#/components/schemas/Submission'
+      
+    
+      

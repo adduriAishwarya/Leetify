@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.header-section {
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 12rem;
+}
+
+.right-nav {
+  margin-top: 16px;
+}
+.right-nav span {
+  padding: 8px 15px 10px 15px;
+  cursor: pointer;
+  border-radius: 1020px;
+}
+.right-nav span.premium {
+  color: #fea116;
+}
+
+.right-nav span:hover {
+  color: black;
+  background-color: white;
+  transition: 0.4s all;
+}
+
+.right-nav span.premium:hover {
+  color: black;
+  background-color: #fea116;
+}
+
+.header-nav > div > nav > a {
+  margin-right: 3rem;
+  text-decoration: none;
+  color: white;
+}
+
+.site-brand {
+  display: flex;
+}
+
+.site-brand > div {
+  padding-left: 15px;
+  padding-top: 3px;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+
+.brand-name {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  left: -10px;
+  top: -3px;
+}

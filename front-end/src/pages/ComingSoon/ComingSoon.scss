@@ -1,0 +1,55 @@
+/* Set the height, width, and background color of the main container */
+
+.comingsoon-container{
+    height: 100vh;
+    width: 100%;
+    background: #AAFFA9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #11FFBD, #AAFFA9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/* Set the font size and color of the 'h1' element inside 'greatthings' */
+.greatthings{
+    margin-top: 255px;
+    margin-left: 150px;
+    position: absolute;
+    text-align: center;
+}
+
+.greatthings h1{
+    font-size: 100px;
+    color: black;
+     
+}
+
+.greatthings h2{
+    margin-top: 30px;
+    color: black;
+}
+/* Style the 'explore problems' button */
+.explrbtn{
+    margin: 0.7rem 0 0.7rem 0rem;
+    width: 15rem;
+    color: black;
+    background: none; /* fallback for old browsers */
+    border-radius: 10px;
+    height: 40px;
+    border: 1px solid black;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.explrbtn:hover {
+    background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+    border: 1px solid white;
+  }
+
+/* Set the margin of the container that holds the 'explore problems' button */
+.explrbtndiv{
+
+    margin-top: 20px;
+}

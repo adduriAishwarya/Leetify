@@ -1,0 +1,95 @@
+.setproblem-container {
+  height: 656px;
+}
+
+.setproblem-nav {
+  height: 2rem;
+  width: 90%;
+  padding: 1rem 0 1rem 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.setproblem-content-container {
+  overflow-y: auto;
+  padding: 1rem 0rem 1rem 3rem;
+  height: 78vh;
+}
+
+.setproblem-block-1 {
+  display: flex;
+  width: 100%;
+}
+
+.setproblem-block-1a {
+  flex: 4;
+}
+
+.setproblem-block-1b {
+  flex: 5;
+  padding-left: 1.5rem;
+}
+
+.setproblem-block-1b > h4 {
+  margin-bottom: 1rem;
+}
+
+.setproblem-block-2 {
+  margin-top: 1rem;
+}
+
+.increase-bottom-padding {
+  height: 15rem;
+}
+
+.setproblem-form > h4 {
+  margin-top: 1rem;
+}
+
+.setproblem-examples {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 33.5rem;
+  margin-top: 1rem;
+}
+
+.setproblem-examples-div {
+  display: flex;
+  width: 34rem;
+  flex-direction: column;
+}
+
+.setproblem-example {
+  width: 33.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.setproblem-block-3 {
+  display: flex;
+}
+
+.setproblem-block-3a {
+  flex: 5;
+}
+
+.setproblem-block-3b {
+  flex: 5;
+}
+
+.test-case-editor {
+  margin-top: 1rem;
+}
+
+.setproblem-block-4 {
+  margin-top: 3rem;
+  width: 94.1%;
+}
+
+.setproblem-block-4 > button {
+  height: 4rem;
+  letter-spacing: 0.5rem;
+  font-weight: bolder;
+}

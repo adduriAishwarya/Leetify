@@ -1,0 +1,72 @@
+.ad-db-container {
+  width: 98%;
+}
+
+.ad-db-b1 {
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ad-db-b1a {
+  width: 18rem;
+  height: 9rem;
+  border-radius: 10px;
+  background-image: url("https://assets.leetcode.com/explore/cards/cheatsheets/img-1674082113.png");
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+
+  h3,
+  h1 {
+    color: white;
+    margin-top: 1rem;
+  }
+}
+
+.ad-db-b1b {
+  width: 18rem;
+  height: 9rem;
+
+  border-radius: 10px;
+  background-image: url("https://assets.leetcode.com/explore/cards/dynamic-programming/img.png");
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+
+  h3,
+  h1 {
+    color: white;
+    margin-top: 1rem;
+  }
+}
+
+.ad-db-b1c {
+  width: 18rem;
+  height: 9rem;
+  border-radius: 10px;
+  background-image: url("https://assets.leetcode.com/explore/cards/introduction-to-the-beginners-guide/img-1652222288.png");
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+
+  h3,
+  h1 {
+    color: white;
+    margin-top: 1rem;
+  }
+}
+
+.ad-db-b2 {
+  margin: 2rem 4rem 4rem 4rem;
+  height: 14rem;
+  display: flex;
+  align-items: center;
+
+  div {
+    width: 100%;
+    height: 14rem;
+  }
+}

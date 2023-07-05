@@ -1,0 +1,19 @@
+{
+  "name": "final-project-group-codelite_lsar",
+  "version": "1.0.0",
+  "description": "Leetify is an online platform that provides a collection of coding challenges to help developers prepare for technical interviews. The platform offers a wide range of problems that cover various data structures and algorithms, such as arrays, linked lists, trees, graphs, dynamic programming, and more. Leetify can be used by many software engineers, developers, and students who want to enhance their problem-solving and coding skills. It can also be commonly used as a tool for technical interviews, where candidates are often asked to solve coding problems similar to those found on Leetify. There are three types of users:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info-6150-spring-2023/final-project-group-codelite_lsar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info-6150-spring-2023/final-project-group-codelite_lsar/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info-6150-spring-2023/final-project-group-codelite_lsar#readme"
+}

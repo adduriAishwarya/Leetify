@@ -1,0 +1,35 @@
+.up-cont {
+  width: 90%;
+}
+
+.up-cont-b1 {
+  width: 100%;
+  padding: 1rem 0 1rem 3rem;
+  height: 2rem;
+}
+
+.up-cont-b3 {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  button {
+    margin-left: 1rem;
+  }
+}
+
+.up-cont-b4 {
+  overflow: auto;
+  height: 455px;
+  width: 100%;
+}
+
+.up-cont-fix1 {
+  padding: 0;
+  margin-top: 0;
+  padding-top: 1rem;
+}
+
+.up-cont-fix2 {
+  margin-top: 0;
+  padding-top: 1rem;
+}

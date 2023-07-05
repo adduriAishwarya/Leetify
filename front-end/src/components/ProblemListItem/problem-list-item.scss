@@ -1,0 +1,21 @@
+.problem-link {
+  text-decoration: none;
+  color: black;
+}
+
+.problem-list-item-container {
+  width: 85%;
+  height: 2rem;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0.7rem;
+  padding: 0.5rem 2rem;
+}
+
+.problem-list-item-container:hover {
+  transform: scale(1.005);
+  transition: ease;
+}

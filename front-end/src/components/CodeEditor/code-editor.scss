@@ -1,0 +1,31 @@
+@import "../../variables.scss";
+
+.code-editor-heading {
+  margin: 0.7rem 1rem;
+}
+
+.editor-bottom-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-top: 0.7rem;
+}
+
+.heading-results {
+  margin-left: 1rem;
+}
+
+.btn-run {
+  background: $base-background;
+  left: 27rem;
+}
+
+.btn-submit {
+  background: $base-background;
+  left: 28rem;
+}
+
+.results-container {
+  overflow-y: scroll;
+  height: 11rem;
+}

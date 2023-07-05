@@ -1,0 +1,22 @@
+@import "../../variables.scss";
+
+.problem-page-container {
+  display: flex;
+  height: calc(100vh - 4rem);
+}
+
+.problem-page-left {
+  flex: 1;
+  padding: 1rem 1rem 1rem 2rem;
+  border-right: 1px solid black;
+  margin: 0;
+}
+
+.problem-page-right {
+  flex: 1;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: white !important;
+  background: $base-background;
+}

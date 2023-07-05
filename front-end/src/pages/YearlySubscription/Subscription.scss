@@ -1,0 +1,181 @@
+.subscription-container {
+    display: flex;
+    height: 100vh;
+    background: #f7f7f7;
+    transition: transform 0.5s ease-in-out;
+}
+  
+  .left3-container3 {
+    background: white;
+    width: 40%;
+    height: 100%;
+    box-shadow: 2px 0 5px 2px rgba(133, 124, 124, 0.5);
+}
+
+.right3-container3 {
+    width: 60%;
+    height: 100%;
+    box-shadow: 0 0 5px 2px rgba(179, 172, 172, 0.5);
+    background: white;
+  
+}
+
+  .backarrow img{
+    margin-left: 80px;
+    margin-top: 40px;
+    position: absolute;
+    box-shadow: 0 0 5px 2px rgba(179, 172, 172, 0.5);
+    border-radius: 50px;
+  
+  }
+  .storeicon img{
+    margin-left:120px;
+    margin-top: 40px;
+    position: absolute;
+    border-radius: 50px;
+    box-shadow: 0 0 5px 2px rgba(179, 172, 172, 0.5);
+
+  
+  }
+  .subscription-form {
+    padding: 12rem 7rem;
+    align-items: center;
+    margin-top: -50px;
+    margin-left: 110px;
+    align-items: stretch;
+    color: grey;
+  }
+  
+  .subscription-form > h1 {
+    margin: 2rem;
+    margin-left: 25px;
+    margin-top: -40px;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  .subbtn {
+    height: 4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: rgb(44, 71, 227);
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    transition: 0.6s;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    width: 15rem;
+    margin-left: 70px;
+    margin-top: 40px;
+  }
+  
+  .sheen:after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    background: linear-gradient(
+      to bottom,
+      rgba(171, 227, 164, 0),
+      rgba(230, 238, 232, 0.5) 50%,
+      rgba(118, 167, 196, 0)
+    );
+    transform: rotateZ(60deg) translate(-25em, 15em);
+  }
+  
+  .sheen:hover::after {
+    animation: sheen 1.5s forwards;
+  }
+  @keyframes sheen {
+    100% {
+      transform: rotateZ(60deg) translate(10em, -15em);
+    }
+  }
+  
+  .card-number, .cardnum{
+    margin: 0.7rem 0 0.7rem 0rem;
+    width: 24rem;
+  }
+  
+  .expiry-date, .expdate{
+    margin: 0.7rem 0 0.7rem 0rem;
+    
+  }
+  .cvv, .cvvdiv{
+    margin: 0.7rem 0 0.7rem 0rem;
+    margin-left: 193px;
+    margin-top:-67px;
+   
+    
+  }
+  .cardholdername, .cardname{
+    margin: 0.7rem 0 0.7rem 0rem;
+    width: 24rem;
+    margin-top: 10px;
+  }
+  .country-select, .coubtrydiv{
+    margin: 0.7rem 0 0.7rem 0rem;
+    width: 24rem;
+
+  }
+  .zip, .zipdiv{
+    margin: 0.7rem 0 0.7rem 0rem;
+    width: 24rem;
+    margin-top: -11.5px;
+
+  }
+  
+  .subbtn {
+    margin: 0.7rem 0 0.7rem 0rem;
+    width: 24rem;
+    margin-left: 0px;
+    color: white;
+    margin-top: 0px;
+    background: rgb(49, 114, 205);  /* fallback for old browsers */
+    border: none;
+  }
+  .cont3 {
+    color: rgb(96, 92, 92);
+    position: relative;
+    margin-top: 100px;
+    margin-left: 40px;
+    line-height: 2;    
+    text-align: left;
+    max-width: 405px;
+}
+  .parag1 h2{
+    margin-left: 30px;
+    font-size: 40px;
+    position: absolute;
+    color: black;
+  }
+  .peryear{
+    margin-left: 200px;
+    margin-top: 13px;
+    max-width: 40px;
+    line-height: 1.5;    
+
+  }
+  
+  .cont3 p{
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  .leetifylogo3{
+    margin-left: 140px;
+    margin-top: 20px;
+  }
+.terms{
+    position: absolute;
+    font-size: 14px;
+    color: rgb(124, 116, 116);
+    max-width: 360px;
+    text-align: center;
+    margin-top: -180px;
+    margin-left: 230px;
+
+}
+  
+  

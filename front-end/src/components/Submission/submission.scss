@@ -1,0 +1,59 @@
+@import "../../variables.scss";
+
+.submission-item-container {
+  cursor: pointer;
+  height: 4rem;
+  width: 90%;
+  //   border: 1px solid black;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+}
+
+.submission-item-container:hover {
+  background: beige;
+  box-shadow: -3px 2px 16px -6px rgba(104, 99, 99, 0.86);
+  -webkit-box-shadow: -3px 2px 16px -6px rgba(104, 99, 99, 0.86);
+  -moz-box-shadow: -3px 2px 16px -6px rgba(104, 99, 99, 0.86);
+}
+
+.submission-item-left {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.submission-item-left > h5 {
+  margin-top: 0.7rem;
+}
+
+.submission-item-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.submission-item-right > img {
+  width: 2rem;
+  height: 2rem;
+}
+
+// .pagebar {
+//   list-style: none;
+//   display: flex;
+//   justify-content: space-evenly;
+//   margin-top: 1rem;
+//   width: 10rem;
+// }
+
+.page {
+  display: flex;
+  justify-content: center;
+}
+
+.css-19micn4-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected,
+.css-19micn4-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected:hover {
+  background: $base-background;
+}

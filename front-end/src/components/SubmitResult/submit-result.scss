@@ -1,0 +1,30 @@
+.tab-parent {
+  display: flex;
+}
+
+.tab {
+  width: 6rem !important;
+}
+
+.tab-item {
+  width: 100%;
+}
+
+.test-case-box {
+  background-color: rgb(208, 207, 205);
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border-radius: 0.2rem;
+}
+
+.result-status {
+  padding: 1rem;
+}
+
+.accepted-status-heading {
+  color: green;
+}
+
+.wrong-status-heading {
+  color: red;
+}
